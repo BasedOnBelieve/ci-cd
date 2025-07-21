@@ -13,11 +13,12 @@ pipeline {
             steps {
                     checkout scm
             }  
-        }/*
+        }
         stage('cloning repo') {
             steps {
-              git  url: 'https://github.com/BasedOnBelieve/ci-cd.git', branch: 'main'
+              ansiblePlaybook credentialsId: 'ansible', installation: 'ansible', inventory: 
+              '/webapp/roles-03/hosts.ini', playbook: '/webapp/roles-03/03-role-playbook.yml'
             }
-        }*/
+        }
     }
 }
