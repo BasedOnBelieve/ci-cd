@@ -1,9 +1,10 @@
 pipeline {
-    agent any
+    agent none
 
     stages {
 
         stage('verify git') {
+            agent {label 'ans'}
             steps {
                 sh 'which git'
                 sh 'git --version'
