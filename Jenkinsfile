@@ -27,7 +27,7 @@ pipeline {
                 )
             }
         }
-        */
+        
 
         stage('run ansible manually') {
             steps {
@@ -38,6 +38,6 @@ pipeline {
                     -u ec2-user
                 '''
             }
-        }
+        }*/
     }
 }
