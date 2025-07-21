@@ -1,0 +1,8 @@
+---
+- name: copy html file to web
+  hosts: ecom
+  become: yes
+
+  roles:
+      - roles-03/ecomm
+...
