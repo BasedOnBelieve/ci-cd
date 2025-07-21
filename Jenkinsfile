@@ -22,7 +22,7 @@ pipeline {
                     credentialsId: 'ansible',
                     installation: 'ansible',
                     inventory: 'roles-03/hosts.ini',
-                    playbook: 'roles-03/03-role-playbook.yml'
+                    playbook: '03-role-playbook.yml'
                 )
             }
         }
