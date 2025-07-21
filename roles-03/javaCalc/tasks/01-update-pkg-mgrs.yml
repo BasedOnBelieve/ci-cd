@@ -1,0 +1,13 @@
+---
+- name: update Dnf package  mgr 
+  yum:
+    update_cachee: yes
+    state: latest
+  when: ansibleansible_pkg_mgr == 'dnf'
+
+- name: update Apt package mgr
+  apt:
+   update_cache: yes
+   state: latest
+  when: ansible_pkg_mgr == 'apt' 
+...

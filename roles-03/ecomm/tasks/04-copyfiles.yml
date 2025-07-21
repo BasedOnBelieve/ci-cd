@@ -1,0 +1,9 @@
+---
+  # tasks file for ecomm
+- name: copy webApp to remote server
+  copy:
+    remote_src: /home/ec2-user/workspace/web-app/
+    dest: /var/www/html/
+  when: ansible_pkg_mgr == 'dnf'
+
+...
