@@ -1,4 +1,5 @@
 ---
   # tasks file for ecomm
 - import_tasks: 02-installations.yml
+- import_tasks: 03-service.yml
 ...
