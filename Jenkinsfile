@@ -16,7 +16,6 @@ pipeline {
             }  
         }
 
-        /*
         stage('cloning repo') {
             steps {
                 ansiblePlaybook(
@@ -27,7 +26,7 @@ pipeline {
                 )
             }
         }
-        */
+        /*
 
         stage('run ansible manually') {
             steps {
@@ -39,5 +38,6 @@ pipeline {
                 '''
             }
         }
+    */
     }
 }
