@@ -32,7 +32,7 @@ pipeline {
         stage('run ansible manually') {
             steps {
                 sh '''
-                /usr/bin/ansible-playbook /roles-03/03-roles-playbook.yml \
+                /usr/bin/ansible-playbook /webapp/roles-03/03-roles-playbook.yml \
                     -i roles-03/hosts.ini \
                     --private-key ssh12547533458778676982.key \
                     -u ec2-user
