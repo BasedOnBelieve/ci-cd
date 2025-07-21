@@ -38,6 +38,6 @@ pipeline {
                     -u ec2-user
                 '''
             }
-        }*/
+        }
     }
 }
