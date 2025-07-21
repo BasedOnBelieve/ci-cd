@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'ans' }
+    agent any
 
     stages {
 
