@@ -2,6 +2,13 @@ pipeline {
     agent {label 'ansible'}
     
     stages {
+        
+        stage('verify git') {
+            steps {
+                sh 'which git'
+                sh 'git --version'
+            }
+        }
         stage('git checkout') {
             steps {
                     checkout scm
